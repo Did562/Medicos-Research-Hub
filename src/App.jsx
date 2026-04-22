@@ -10,10 +10,10 @@ export default function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const message = Medicos Research Hub Application:%0A%0AName: ${form.name}%0AEmail: ${form.email}%0AInterest: ${form.interest};
+    const message = `Medicos Research Hub Application:%0A%0AName: ${form.name}%0AEmail: ${form.email}%0AInterest: ${form.interest}`;
 
-    window.open(https://wa.me/250793095633?text=${message}, "_blank");
-    window.open(mailto:hirwadidier8@gmail.com?subject=Research Hub Application&body=${message}, "_blank");
+    window.open(`https://wa.me/250793095633?text=${message}`, "_blank");
+    window.open(`mailto:hirwadidier8@gmail.com?subject=Research Hub Application&body=${message}`, "_blank");
 
     setForm({ name: "", email: "", interest: "" });
   };
